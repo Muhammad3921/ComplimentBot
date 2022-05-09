@@ -43,10 +43,8 @@ compliments = ["I love it when u slap me."
                 ,"You push me to become a better person, everyday. I am only in this position because of you my heart."
                 ,"I love it when you get mad you look so cute."
                 ,"I LOVE YOU WIHT MY WHOLE WHOLE HEART, YOU MAKE MY LIFE COMPLETE!"]
-num = 0
-def createmessage():
 
-    time.sleep(86000)
+def createmessage(num):
     
     ms = compliments[num]
 
@@ -59,3 +57,10 @@ def createmessage():
 
     print(message.sid)
     num = num + 1
+
+num = 0
+while(num<=len(compliments)):
+    createmessage(num)
+    time.sleep(86000)
+   
+
